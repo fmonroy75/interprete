@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InterprePro | Servicios de Interpretación Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .foto{
+            width: 400px;
+            height: auto;
+        }
+        .premium-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .premium-shadow {
+            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.2);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold premium-gradient bg-clip-text text-transparent">InterprePro</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-purple-600 transition font-medium">Inicio</a>
+                    <a href="#servicios" class="text-gray-700 hover:text-purple-600 transition font-medium">Servicios</a>
+                    <a href="#areas" class="text-gray-700 hover:text-purple-600 transition font-medium">Áreas</a>
+                    <a href="#como-funciona" class="text-gray-700 hover:text-purple-600 transition font-medium">Cómo Funciona</a>
+                    <a href="#sobre-mi" class="text-gray-700 hover:text-purple-600 transition font-medium">Sobre Mí</a>
+                    <a href="#contacto" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition premium-shadow">Contacto</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-3">
+                <a href="#inicio" class="block text-gray-700 hover:text-purple-600 py-2">Inicio</a>
+                <a href="#servicios" class="block text-gray-700 hover:text-purple-600 py-2">Servicios</a>
+                <a href="#areas" class="block text-gray-700 hover:text-purple-600 py-2">Áreas</a>
+                <a href="#como-funciona" class="block text-gray-700 hover:text-purple-600 py-2">Cómo Funciona</a>
+                <a href="#sobre-mi" class="block text-gray-700 hover:text-purple-600 py-2">Sobre Mí</a>
+                <a href="#politicas" class="block text-gray-700 hover:text-purple-600 py-2">Políticas</a>
+                <a href="#contacto" class="block bg-purple-600 text-white px-4 py-2 rounded-full text-center">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-24 min-h-screen flex items-center premium-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">Conectando Culturas, <span class="text-yellow-300">Rompiendo Barreras</span></h1>
+                    <p class="text-xl mb-8 text-purple-100">Servicios de interpretación profesional con más de 10 años de experiencia en más de 50 idiomas.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contacto" class="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition premium-shadow">Solicitar Intérprete</a>
+                        <a href="#servicios" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition">Conocer Más</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <img src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Interpreters" class="rounded-2xl premium-shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Servicios de Interpretación</h2>
+                <p class="text-xl text-gray-600">Soluciones lingüísticas adaptadas a tus necesidades</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover-scale premium-shadow">
+                    <div class="w-16 h-16 premium-gradient rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Interpretación Simultánea</h3>
+                    <p class="text-gray-600 mb-4">Ideal para conferencias y eventos internacionales con equipos profesionales.</p>
+                    <ul class="text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cabinas insonorizadas</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Equipo de última generación</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover-scale premium-shadow">
+                    <div class="w-16 h-16 premium-gradient rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Interpretación Consecutiva</h3>
+                    <p class="text-gray-600 mb-4">Perfecta para reuniones de negocios, deposiciones y entrevistas.</p>
+                    <ul class="text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Toma de notas profesional</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Máxima precisión</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover-scale premium-shadow">
+                    <div class="w-16 h-16 premium-gradient rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-video text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Interpretación Remota</h3>
+                    <p class="text-gray-600 mb-4">Servicio de interpretación por videollamada para máxima flexibilidad.</p>
+                    <ul class="text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Plataformas compatibles</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Disponibilidad 24/7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Interpretación -->
+    <section id="areas" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Áreas de Especialización</h2>
+                <p class="text-xl text-gray-600">Expertos en múltiples sectores profesionales</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Área 1 -->
+                <div class="bg-white rounded-xl p-6 text-center hover-scale premium-shadow">
+                    <i class="fas fa-gavel text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-semibold">Legal</h3>
+                </div>
+                <!-- Área 2 -->
+                <div class="bg-white rounded-xl p-6 text-center hover-scale premium-shadow">
+                    <i class="fas fa-hospital text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-semibold">Médico</h3>
+                </div>
+                <!-- Área 3 -->
+                <div class="bg-white rounded-xl p-6 text-center hover-scale premium-shadow">
+                    <i class="fas fa-briefcase text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-semibold">Negocios</h3>
+                </div>
+                <!-- Área 4 -->
+                <div class="bg-white rounded-xl p-6 text-center hover-scale premium-shadow">
+                    <i class="fas fa-chart-line text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-semibold">Financiero</h3>
+                </div>
+                <!-- Área 5 -->
+                <div class="bg-white rounded-xl p-6 text-center hover-scale premium-shadow">
+                    <i class="fas fa-flask text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-semibold">Técnico</h3>
+                </div>
+                <!-- Área 6 -->
+                <div class="bg-white rounded-xl p-6 text-center hover-scale premium-shadow">
+                    <i class="fas fa-graduation-cap text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-semibold">Educativo</h3>
+                </div>
+                <!-- Área 7 -->
+                <div class="bg-white rounded-xl p-6 text-center hover-scale premium-shadow">
+                    <i class="fas fa-university text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-semibold">Gubernamental</h3>
+                </div>
+                <!-- Área 8 -->
+                <div class="bg-white rounded-xl p-6 text-center hover-scale premium-shadow">
+                    <i class="fas fa-truck text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-semibold">Logística</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona -->
+    <section id="como-funciona" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">¿Cómo Funciona?</h2>
+                <p class="text-xl text-gray-600">4 simples pasos para obtener tu intérprete</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Paso 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 premium-gradient rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Contacto</h3>
+                    <p class="text-gray-600">Completa el formulario o llámanos</p>
+                </div>
+                <!-- Paso 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 premium-gradient rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Evaluación</h3>
+                    <p class="text-gray-600">Analizamos tus necesidades específicas</p>
+                </div>
+                <!-- Paso 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 premium-gradient rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Asignación</h3>
+                    <p class="text-gray-600">Seleccionamos el intérprete ideal</p>
+                </div>
+                <!-- Paso 4 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 premium-gradient rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">4</div>
+                    <h3 class="text-xl font-semibold mb-2">Servicio</h3>
+                    <p class="text-gray-600">Interpretación profesional garantizada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="assets/img/1763862024733.jfif" alt="Interprete" class="rounded-2x1 premium-shadow foto">
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Juan Luis</h2>
+                    <p class="text-xl text-purple-600 mb-4">Intérprete Certificada · 10+ años de experiencia</p>
+                    <p class="text-gray-600 mb-6">Especialista en interpretación simultánea y consecutiva para conferencias internacionales, negociaciones comerciales y eventos corporativos. Certificada por la Asociación Internacional de Intérpretes de Conferencia (AIIC).</p>
+                    <div class="flex gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600">50+</div>
+                            <div class="text-gray-500">Idiomas</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600">1000+</div>
+                            <div class="text-gray-500">Proyectos</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600">100%</div>
+                            <div class="text-gray-500">Satisfacción</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition"><i class="fab fa-twitter text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Políticas de Servicio -->
+    <section id="politicas" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Políticas de Servicio</h2>
+                <p class="text-xl text-gray-600">Compromiso con la excelencia y confidencialidad</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border border-gray-200 rounded-2xl">
+                    <i class="fas fa-lock text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Confidencialidad</h3>
+                    <p class="text-gray-600">Todos nuestros intérpretes firman acuerdos de confidencialidad para proteger tu información.</p>
+                </div>
+                <div class="p-8 border border-gray-200 rounded-2xl">
+                    <i class="fas fa-clock text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Cancelaciones</h3>
+                    <p class="text-gray-600">Cancelación gratuita hasta 48 horas antes del servicio. Después aplican cargos del 50%.</p>
+                </div>
+                <div class="p-8 border border-gray-200 rounded-2xl">
+                    <i class="fas fa-certificate text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Garantía de Calidad</h3>
+                    <p class="text-gray-600">Si no estás satisfecho, te ofrecemos un reembolso completo o un servicio gratuito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 premium-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="text-white">
+                    <h2 class="text-4xl font-bold mb-6">¿Necesitas un intérprete?</h2>
+                    <p class="text-xl mb-8 text-purple-100">Estamos disponibles 24/7 para atender tus necesidades de interpretación.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt w-10 text-2xl"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope w-10 text-2xl"></i>
+                            <span>info@interprepro.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt w-10 text-2xl"></i>
+                            <span>123 Business Ave, New York, NY 10001</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 premium-shadow">
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Nombre" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" required>
+                            <input type="text" placeholder="Apellido" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" required>
+                        </div>
+                        <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" required>
+                        <input type="tel" placeholder="Teléfono" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600">
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600">
+                            <option>Selecciona servicio</option>
+                            <option>Interpretación Simultánea</option>
+                            <option>Interpretación Consecutiva</option>
+                            <option>Interpretación Remota</option>
+                        </select>
+                        <textarea rows="4" placeholder="Mensaje" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-600" required></textarea>
+                        <button type="submit" class="w-full premium-gradient text-white py-4 rounded-lg font-semibold hover:opacity-90 transition premium-shadow">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <span class="text-2xl font-bold premium-gradient bg-clip-text text-transparent">InterprePro</span>
+                    <p class="text-gray-400 mt-4">Conectando el mundo a través de la comunicación profesional.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#inicio" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition">Servicios</a></li>
+                        <li><a href="#areas" class="hover:text-white transition">Áreas</a></li>
+                        <li><a href="#contacto" class="hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#politicas" class="hover:text-white transition">Políticas de Servicio</a></li>
+                        <li><a href="#" class="hover:text-white transition">Términos y Condiciones</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacidad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 InterprePro. Todos los derechos reservados.</p>
+                <p class="mt-2 text-sm">Desarrollado por <a href="https://www.ingeniumbright.com" target="_blank"> IngeniumBright</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Gracias por contactarnos. Te responderemos a la brevedad.');
+            contactForm.reset();
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white', 'shadow-lg');
+            } else {
+                nav.classList.remove('bg-white', 'shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
